@@ -54,14 +54,8 @@ public class Main extends PluginBase {
   public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
     Player p = (Player) sender;
 
-    if (cmd.getName().equalsIgnoreCase("transferServerUI")) {
-      if (args.length == 0) {
-        //TEXT HERE
-      } else { // args length is greater then 0
-        if (args[0].equalsIgnoreCase("test")) {
-          //MORE
-        }
-      }
+    if (cmd.getName().equalsIgnoreCase("transferServerUI")) {  //YOU CAN REMOVE THIS IF YOU WANT.
+      p.sendMessage(CC.chat("&aMade By Maxxie114 And AndrewCherring"));
     }
     return true;
   }
