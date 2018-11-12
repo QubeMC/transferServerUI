@@ -55,7 +55,7 @@ public class Main extends PluginBase {
     Player p = (Player) sender;
 
     if (cmd.getName().equalsIgnoreCase("transferServerUI")) {  //YOU CAN REMOVE THIS IF YOU WANT.
-      p.sendMessage(CC.chat("&aMade By Maxxie114 And AndrewCherring"));
+      p.sendMessage(CC.chat("&aMade By Maxxie114 And Andrew121410"));
     }
     return true;
   }

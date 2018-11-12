@@ -39,8 +39,8 @@ public class Servers extends Command {
     new NukkitRunnable() {
       @Override
       public void run() {
-        FormWindowModal window = new FormWindowModal(api.getNameOfMenu(), api.getTextInTheBox(),
-            api.getButton1(), api.getButton2());
+        FormWindowModal window = new FormWindowModal(CC.chat(api.getNameOfMenu()), CC.chat(api.getTextInTheBox()),
+            CC.chat(api.getButton1()), CC.chat(api.getButton2()));
         p.showFormWindow(window);
       }
     }.run();
