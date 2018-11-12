@@ -18,7 +18,7 @@ public class Servers extends Command {
 
   public Servers(String name) {
     super(name);
-    this.setAliases(new String[] {"transfer"});
+    this.setAliases(new String[] {"transfer"}); //
   }
 
   @Override
