@@ -18,6 +18,7 @@ public class Servers extends Command {
 
   public Servers(String name) {
     super(name);
+    this.setAliases(new String[] {"transfer"});
   }
 
   @Override
@@ -28,7 +29,7 @@ public class Servers extends Command {
       sendwindow(p);
     } else {
       if (args.length >= 1) {
-        p.sendMessage(CC.chat("&cUsage: /servers"));
+        p.sendMessage(CC.chat("&cUsage: /servers OR /transfer"));
       }
     }
     return true;
