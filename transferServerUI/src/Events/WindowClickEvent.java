@@ -24,7 +24,7 @@ public class WindowClickEvent implements Listener {
     if (event.getWindow() instanceof FormWindowModal) {
       FormWindowModal gui = (FormWindowModal) event.getWindow();
       String answer = gui.getResponse().getClickedButtonText();
-      
+
       if (answer.contains(api.getButton1())) {
         event.getPlayer().transfer(server1);
       }

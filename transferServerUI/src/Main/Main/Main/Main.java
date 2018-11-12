@@ -3,9 +3,7 @@ package Main.Main.Main;
 import Commands.Servers;
 import Events.WindowClickEvent;
 import Utils.CC;
-import cn.nukkit.Player;
 import cn.nukkit.command.Command;
-import cn.nukkit.command.CommandSender;
 import cn.nukkit.plugin.PluginBase;
 
 public class Main extends PluginBase {
@@ -48,15 +46,5 @@ public class Main extends PluginBase {
   public void regConfig() { // INCASE YOU HAVE ALOT OF CONFIGS.
     this.saveDefaultConfig();
     this.saveConfig();
-  }
-
-  @Override
-  public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-    Player p = (Player) sender;
-
-    if (cmd.getName().equalsIgnoreCase("transferServerUI")) {  //YOU CAN REMOVE THIS IF YOU WANT.
-      p.sendMessage(CC.chat("&aMade By Maxxie114 And Andrew121410"));
-    }
-    return true;
   }
 }

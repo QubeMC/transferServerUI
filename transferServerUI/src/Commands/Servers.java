@@ -18,7 +18,7 @@ public class Servers extends Command {
 
   public Servers(String name) {
     super(name);
-    this.setAliases(new String[] {"transfer"}); //
+    this.setAliases(new String[] {"transfer"});
   }
 
   @Override
@@ -39,8 +39,8 @@ public class Servers extends Command {
     new NukkitRunnable() {
       @Override
       public void run() {
-        FormWindowModal window = new FormWindowModal(CC.chat(api.getNameOfMenu()), CC.chat(api.getTextInTheBox()),
-            CC.chat(api.getButton1()), CC.chat(api.getButton2()));
+        FormWindowModal window = new FormWindowModal(CC.chat(api.getNameOfMenu()),
+            CC.chat(api.getTextInTheBox()), CC.chat(api.getButton1()), CC.chat(api.getButton2()));
         p.showFormWindow(window);
       }
     }.run();
