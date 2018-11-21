@@ -1,9 +1,0 @@
-#Made for the 2b2tMCPE Server!
-name: transferServerUI
-main: transferServerUI.Main
-version: "1.0.0"
-api: ["1.0.5"]
-author: Maxxie114
-authors: ["Maxxie114", "Andrew121410"]
-description: put something here.
-website: 2b2tmcpe.org
